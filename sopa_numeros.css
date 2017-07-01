@@ -1,0 +1,66 @@
+.tabla{
+	border-spacing: 0;
+	border-collapse: collapse;
+	font-size: 2em;
+}
+
+.tabla td{
+	position:relative;
+	border:2px solid blue;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+}
+
+#divTabla{
+	float: left;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+#divInstrucciones{
+	margin-left: 30%;
+}
+
+#infoRespuesta{
+	display:none;
+}
+
+.celdaJuego{
+	cursor:pointer;
+}
+
+td.seleccionada{
+	background-color:#F7819F;
+}
+
+img.marca{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.alert{
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+.alert-success{
+	color: #3c763d;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+}
+
+.alert-warning{
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+	color: #8a6d3b;
+}
+
+.alert-danger{
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}

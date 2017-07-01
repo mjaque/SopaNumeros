@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+	
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Miguel Jaque Barbero mjaque@migueljaque.com">
+	<meta name="description" content="Juego de sopa de números. Juego educativo matemático.">
+	
+	<link rel="stylesheet" href="sopa_numeros.css" media="screen">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+	<![endif]-->
+
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.js"
+		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous">
+	</script>
+ 	
+ 	<title>Sopa de Números</title>
+</head>
+<body>
+	<h1>Sopa de Números</h1>
+	<div id="divTabla"></div>
+		
+	<div id="divInstrucciones">
+		<h3 class="panel-title">Instrucciones</h3>
+		<p style="font-weight: bold;">Nivel: <span id="nivel"></span>.</p>
+		<p>Encuentra las secuencias de <span id="secuencia"></span> números que suman <span id="objetivo"></span>. Las secuencias pueden estar en horizontal, en vertical y en diagonal.</p>
+		<p>Para seleccionar las secuencias pulsa sobre los números.</p>
+		<p>Encontradas <span id="encontradas"></span> de <span id="soluciones"></span>.</p>
+		<div id="infoRespuesta"></div>
+		<p style="text-align:right"><button id="btnMeRindo" type="button" class="btn btn-default">Me Rindo</button></p>
+	</div>
+		
+	<audio id="audio-acierto" preload="auto">
+		<source src="acierto.mp3" type="audio/mpeg">
+		<source src="acierto.ogg" type="audio/ogg">
+	</audio>
+	<audio id="audio-error" preload="auto">
+		<source src="error.mp3" type="audio/mpeg">
+		<source src="error.ogg" type="audio/ogg">
+	</audio> 
+		
+	<script type="text/javascript" src="sopa_numeros.js"></script>
+</body>
+</html>
